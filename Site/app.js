@@ -5,20 +5,11 @@ const cors = require('cors');
 const passport = require('passport');
 const mongoose = require('mongoose');
 const config = require('./config/database');
-//var mongoose = require('./models/mongoose');
 
-//Connect To Database
+// Connect to Database
 mongoose.connect(config.database);
-
-//On Connect
-mongoose.connection.on('connected', () => {
- console.log('Connected to db ' +config.database);
-});
-
-//On Error
-//mongoose.connection.on('error', (err) => {
-//  console.log('Db error ' +err);
-//});
+	.then(() => console.log('Connected to db ' + config.database))
+	.catch(err => console.log('Db error ' + err));
 
 //Initialising express
 const app = express();
