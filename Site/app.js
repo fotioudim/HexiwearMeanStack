@@ -7,7 +7,7 @@ const mongoose = require('mongoose');
 const config = require('./config/database');
 
 // Connect to Database
-mongoose.connect(config.database);
+mongoose.connect(config.database)
 	.then(() => console.log('Connected to db ' + config.database))
 	.catch(err => console.log('Db error ' + err));
 
