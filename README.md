@@ -1,5 +1,8 @@
-# HexiwearMeanStack
-Mean Stack site to display sensor data from hexiwear smartwatch
+# MEAN stack with Hexiwear : "Health and Care"
+E-health web application based on the MEAN stack technologies(MongoDB, Express.js, Angular, and Node.js).
+Various graphs and charts are provided to display incoming sensor data (heart rate, steps, etc.) from the open-source Hexiwear smartwatch for each patient,
+as well as a private chat and BMI(Body Mass Index), BMR(Basal Metabolic Rate), TDEE(Total Daily Energy Expenditure) algorithm calculations.
+
 ## Installation
 1) Run `npm install` on `./Site` directory. 
 2) Run `npm install` on `./Site/angular-src` directory.
